@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+</head>
+<body>
+
+    <header>
+        <h3>🎓 Campus Events</h3>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Event Registration</h1>
+        <p>Fill out the form to register for an event.</p>
+
+        <form>
+            <label>Full Name *</label><br>
+            <input type="text" placeholder="Enter your full name" required>
+            <br><br>
+
+            <label>Email *</label><br>
+            <input type="email" placeholder="you@example.com" required>
+            <br><br>
+
+            <label>Phone Number *</label><br>
+            <input type="tel" placeholder="Enter your phone number" required>
+            <br><br>
+
+            <label>Department *</label><br>
+            <select required>
+                <option value="">Select department</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+            </select>
+            <br><br>
+
+            <label>Choose an Event *</label><br>
+            <select required>
+                <option value="">Select an event</option>
+                <option>Tech Fest 2026</option>
+                <option>Cultural Day</option>
+                <option>Inter-College Sports Meet</option>
+                <option>AI Workshop</option>
+                <option>Photography Contest</option>
+                <option>Career Guidance Talk</option>
+            </select>
+            <br><br>
+
+            <label>Preferred Date *</label><br>
+            <input type="date" required>
+            <br><br>
+
+            <label>Message (Optional)</label><br>
+            <textarea placeholder="Any additional information..." rows="3"></textarea>
+            <br><br>
+
+            <input type="checkbox" required>
+            <label>I agree to the event rules and regulations.</label>
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</body>
+</html>
