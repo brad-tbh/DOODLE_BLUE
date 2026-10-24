@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html"> Campus <span>Events</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a class="active" href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h1>Event Registration</h1>
+    <p>Fill out the form to register for an event.</p>
+
+    <form class="registration-form" action="#" method="get">
+
+        <div class="form-grid">
+
+            <div class="form-field">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email"
+                       placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-field">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-field">
+                <label for="department">Department *</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>AI & ML</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>Mechanical</option>
+                    <option>Civil</option>
+                </select>
+            </div>
+
+            <div class="form-field full-width">
+                <label for="event">Choose an Event *</label>
+                <select id="event" name="event" required>
+                    <option value="">Select an Event</option>
+                    <option>Tech Fest 2026</option>
+                    <option>Cultural Day</option>
+                    <option>Inter-College Sports Meet</option>
+                    <option>AI Workshop</option>
+                    <option>Photography Contest</option>
+                    <option>Career Guidance Talk</option>
+                </select>
+            </div>
+
+            <div class="form-field full-width">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message"
+                          rows="4" placeholder="Any additional information"></textarea>
+            </div>
+
+        </div>
+
+        <label class="agreement">
+            <input type="checkbox" required>
+            I agree to the event rules and regulations.
+        </label>
+
+        <button type="submit" class="button full-button">Register</button>
+
+    </form>
+</section>
+
+<footer>
+    <h3> Campus Events</h3>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="events.html">Events</a> |
+    <a href="schedule.html">Schedule</a>
+    <p>© 2026 Campus Events. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

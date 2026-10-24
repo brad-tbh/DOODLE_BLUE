@@ -1,0 +1,438 @@
+
+/* 1. General Settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#f5f8fc;
+    color: #17243a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    color: #102c4c;
+}
+
+p {
+    color: #627087;
+    line-height: 1.6;
+}
+
+/* 2. Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 5%;
+    background-color: white;
+    box-shadow: 0 2px 8px #dce4ee;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #102c4c;
+}
+
+.logo span {
+    color: #0866e8;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #e6f1ff;
+    color: #0866e8;
+}
+
+/* 3. Home Page Hero Section */
+.hero {
+    padding: 80px 8%;
+    background: linear-gradient(120deg, #dceeff, #a8d0ff);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+/* 4. Common Sections */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.container > h1 {
+    font-size: 34px;
+}
+
+.container > h2 {
+    margin-bottom: 25px;
+}
+
+/* 5. Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #0866e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #064eae;
+    transform: translateY(-2px);
+}
+
+/* 6. Event Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e8f1;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 4px 12px #dce4ee;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #cbd8e8;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.event-image {
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dceeff;
+    border-radius: 8px;
+    font-size: 55px;
+}
+
+.cultural {
+    background-color: #fff0f3;
+}
+
+.sports {
+    background-color: #e8fbf3;
+}
+
+.workshop {
+    background-color: #fff3dc;
+}
+
+/* 7. Event Categories */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.categories a {
+    padding: 22px 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e0e8f1;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.categories a:hover {
+    background-color: #e6f1ff;
+    color: #0866e8;
+    transform: translateY(-3px);
+}
+
+/* 8. About Page */
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 55px 7%;
+    background-color: #eaf4ff;
+}
+
+.about-hero h1 {
+    font-size: 36px;
+}
+
+.about-image {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfe5ff;
+    border-radius: 12px;
+    font-size: 75px;
+}
+
+/* 9. Event Details Page */
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.detail-art {
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dceeff;
+    border-radius: 12px;
+    font-size: 90px;
+}
+
+.detail-info {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.detail-description {
+    margin-top: 25px;
+    scroll-margin-top: 20px;
+}
+
+/* 10. Schedule Table */
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #0866e8;
+    color: white;
+    padding: 16px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e8f1;
+    font-size: 14px;
+}
+
+tr:hover td {
+    background-color: #f0f6ff;
+}
+
+.table-button {
+    color: #0866e8;
+    font-weight: bold;
+}
+
+.table-button:hover {
+    text-decoration: underline;
+}
+
+/* 11. Registration Form */
+.registration-form {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e0e8f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #dce4ee;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd6e4;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #86baff;
+    border-color: #0866e8;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 22px 0;
+    font-size: 13px;
+}
+
+.agreement input {
+    width: auto;
+}
+
+.full-button {
+    width: 100%;
+}
+
+/* 12. Footer */
+footer {
+    margin-top: 40px;
+    padding: 35px 5%;
+    background-color: #102c4c;
+    color: white;
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer p {
+    color: #d2dfed;
+    font-size: 13px;
+}
+
+footer a {
+    color: #d2dfed;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* 13. Mobile Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-hero,
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid,
+    .categories,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: 1;
+    }
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .registration-form {
+        padding: 18px;
+    }
+}
